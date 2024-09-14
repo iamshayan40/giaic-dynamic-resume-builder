@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Resume Builder By Muhammad Shayan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="resume-builder">
+      <h1>Static Resume Builder By Muhammad Shayan</h1>
+      <form id="resume-form" class="form-container">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required placeholder="Your Name" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="Your Email" />
+          <small>Please enter a valid email address.</small>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" required placeholder="Your Phone" />
+        </div>
+
+        <div class="input-group">
+          <label for="education">Education</label>
+          <textarea
+            id="education"
+            rows="2"
+            required
+            placeholder="Your Education"
+          ></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="experience">Experience</label>
+          <textarea
+            id="experience"
+            rows="2"
+            required
+            placeholder="Your Experience"
+          ></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="skills">Skills</label>
+          <textarea
+            id="skills"
+            rows="2"
+            required
+            placeholder="Your Skills"
+          ></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="courses">Courses</label>
+          <textarea
+            id="courses"
+            rows="2"
+            required
+            placeholder="Your Courses"
+          ></textarea>
+        </div>
+
+        <button type="button" id="generate" class="generate-btn">
+          Generate Resume
+        </button>
+      </form>
+
+      <div id="resume-output" class="resume-output"></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
